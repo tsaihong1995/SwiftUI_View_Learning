@@ -10,7 +10,8 @@ import SwiftUI
 struct HomeView: View {
     
     
-    @State private var textFieldData = ""
+    @State var taskData: Task
+    @State private var newTaskTitle: String = ""
     // MARK: - BODY
     
     var body: some View {
@@ -27,8 +28,8 @@ struct HomeView: View {
                 BannerView()
                 ScrollView {
                     LazyVStack {
-                        ForEach(0 ..< 10) {_ in
-                            ListRowView(textFieldData: $textFieldData)
+                        ForEach(taskMockData) {item in
+                            AddListRowView(textFieldData: $newTaskTitle)
                         }
                     }
                     .background(Color.clear)
@@ -44,7 +45,7 @@ struct HomeView: View {
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView()
+        HomeView(taskData: taskMockData[1])
     }
 }
 

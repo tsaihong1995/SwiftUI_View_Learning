@@ -1,0 +1,57 @@
+//
+//  MyHeaderView.swift
+//  SwiftUI_View_Learning
+//
+//  Created by Hung-Chun Tsai on 2021-01-26.
+//
+
+import SwiftUI
+
+struct MyHeaderView: View {
+    var title = "Title"
+    var subtitle = "Subtitle"
+    var desc = "Use this to..."
+    var back = Color.yellow
+    var textColor = Color.black
+    
+    init(_ title: String, subtitle: String, desc: String, back: Color = Color.yellow, textColor: Color = Color.black) {
+        self.title = title
+        self.subtitle = subtitle
+        self.desc = desc
+        self.back = back
+        self.textColor = textColor
+    }
+    
+    var body: some View {
+        VStack(spacing: 10) {
+            Text(title)
+                .font(.largeTitle)
+            
+            Text(subtitle)
+                .foregroundColor(.gray)
+            
+            DescView(desc: desc, back: back, textColor: textColor)
+        }
+    }
+}
+
+struct MyHeaderView_Previews: PreviewProvider {
+    static var previews: some View {
+        MyHeaderView("Title", subtitle: "Subtitle", desc: "What does what",
+                   back: .green, textColor: .white)
+    }
+}
+
+struct DescView: View {
+    var desc = "Use this to..."
+    var back = Color.yellow
+    var textColor = Color.black
+    
+    var body: some View {
+        Text(desc)
+            .frame(maxWidth: .infinity)
+            .padding()
+            .background(back)
+            .foregroundColor(textColor)
+    }
+}

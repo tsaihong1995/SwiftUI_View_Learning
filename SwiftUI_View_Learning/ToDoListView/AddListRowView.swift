@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ListRowView: View {
+struct AddListRowView: View {
     
     @Binding var textFieldData :String
     
@@ -39,11 +39,15 @@ struct ListRowView: View {
 
 struct ListRowView_Previews: PreviewProvider {
     
+    
+    
     static var previews: some View {
-        ListRowView(textFieldData: .constant("User Input"))
+        
+        let userInput = "NewTask"
+        AddListRowView(textFieldData: .constant(userInput))
             .previewLayout(.sizeThatFits)
             .padding()
-        ListRowView(textFieldData: .constant(""))
+        AddListRowView(textFieldData: .constant(""))
             .previewLayout(.sizeThatFits)
     }
 }
