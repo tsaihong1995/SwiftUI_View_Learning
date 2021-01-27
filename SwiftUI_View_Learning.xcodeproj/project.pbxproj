@@ -21,6 +21,7 @@
 		2B203B4D25C0678600B934C1 /* FormViewIntro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B203B4C25C0678600B934C1 /* FormViewIntro.swift */; };
 		2B203B5225C07CB200B934C1 /* DisclosureViewIntro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B203B5125C07CB200B934C1 /* DisclosureViewIntro.swift */; };
 		2B203B5625C07D6200B934C1 /* FormView_Header_Footer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B203B5525C07D6200B934C1 /* FormView_Header_Footer.swift */; };
+		2B203B5925C0DCF400B934C1 /* DemoDisclosureGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B203B5825C0DCF400B934C1 /* DemoDisclosureGroup.swift */; };
 		2B36235025BD3B890070B38C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B36234F25BD3B890070B38C /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +42,7 @@
 		2B203B4C25C0678600B934C1 /* FormViewIntro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewIntro.swift; sourceTree = "<group>"; };
 		2B203B5125C07CB200B934C1 /* DisclosureViewIntro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisclosureViewIntro.swift; sourceTree = "<group>"; };
 		2B203B5525C07D6200B934C1 /* FormView_Header_Footer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormView_Header_Footer.swift; sourceTree = "<group>"; };
+		2B203B5825C0DCF400B934C1 /* DemoDisclosureGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoDisclosureGroup.swift; sourceTree = "<group>"; };
 		2B36234F25BD3B890070B38C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -146,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				2B203B5125C07CB200B934C1 /* DisclosureViewIntro.swift */,
+				2B203B5825C0DCF400B934C1 /* DemoDisclosureGroup.swift */,
 			);
 			path = DisclosureGroupView;
 			sourceTree = "<group>";
@@ -230,6 +233,7 @@
 				2B203B4825C0619500B934C1 /* SegmentedControl_Custom.swift in Sources */,
 				2B203B5225C07CB200B934C1 /* DisclosureViewIntro.swift in Sources */,
 				2B203B4525C05CED00B934C1 /* MyHeaderView.swift in Sources */,
+				2B203B5925C0DCF400B934C1 /* DemoDisclosureGroup.swift in Sources */,
 				2B203B4D25C0678600B934C1 /* FormViewIntro.swift in Sources */,
 				2B040CF325A0FB08006A9415 /* ZStackConcept.swift in Sources */,
 			);
