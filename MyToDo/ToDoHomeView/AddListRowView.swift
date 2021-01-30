@@ -12,41 +12,44 @@ struct AddListRowView: View {
     @Binding var textFieldData :String
     
     var body: some View {
-
             VStack {
                 HStack {
                     Image(systemName: "plus")
                         .foregroundColor(.gray)
-                        .font(Font.title.weight(.ultraLight))
+                        .font(Font.title.weight(.light))
                     TextField("Quick Add", text: self.$textFieldData)
-                        .font(Font.title.weight(.thin))
-                        .foregroundColor(.primary)
+                        .font(Font.title.weight(.regular))
+                        .foregroundColor(.newPrimaryColor)
                         .multilineTextAlignment(.center)
-                    Image(systemName: "slider.horizontal.3").foregroundColor(Color("PimaryColor"))
-                        
-                }
+                    Spacer()
+                }//:- HStack
                 Divider()
-                    .frame(height: 10, alignment: .center)
-            }
-            .padding(.leading, UIScreen.main.bounds.width * 0.1)
-            .padding(.trailing, UIScreen.main.bounds.width * 0.1)
-            .padding(.vertical, UIScreen.main.bounds.width * 0.05)
-            .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/)
+                    .frame(height: 1, alignment: .center)
+            }//:- VStack
+            .myListPaddingFormat()
     
     }
 }
 
+extension View{
+    func myListPaddingFormat() -> some View {
+        self.modifier(ListPaddingFormat())
+    }
+}
+
+struct ListPaddingFormat: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .padding(.leading, UIScreen.main.bounds.width * 0.1)
+            .padding(.trailing, UIScreen.main.bounds.width * 0.1)
+            .padding(.vertical, UIScreen.main.bounds.width * 0.02)
+    }
+}
+
+
 
 struct ListRowView_Previews: PreviewProvider {
-    
-    
-    
     static var previews: some View {
-        
-        let userInput = "NewTask"
-        AddListRowView(textFieldData: .constant(userInput))
-            .previewLayout(.sizeThatFits)
-            .padding()
         AddListRowView(textFieldData: .constant(""))
             .previewLayout(.sizeThatFits)
     }

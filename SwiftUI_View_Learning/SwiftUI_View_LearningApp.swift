@@ -11,7 +11,7 @@ import SwiftUI
 struct SwiftUI_View_LearningApp: App {
     var body: some Scene {
         WindowGroup {
-            ShowPictureWithWarningView()
+            ContentView()
         }
     }
 }

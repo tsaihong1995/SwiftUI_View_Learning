@@ -22,6 +22,11 @@
 		2B203B5225C07CB200B934C1 /* DisclosureViewIntro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B203B5125C07CB200B934C1 /* DisclosureViewIntro.swift */; };
 		2B203B5625C07D6200B934C1 /* FormView_Header_Footer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B203B5525C07D6200B934C1 /* FormView_Header_Footer.swift */; };
 		2B203B5925C0DCF400B934C1 /* DemoDisclosureGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B203B5825C0DCF400B934C1 /* DemoDisclosureGroup.swift */; };
+		2B21695E25C44E35008D5794 /* CurvedSideRectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B21695D25C44E35008D5794 /* CurvedSideRectangle.swift */; };
+		2B21696225C452A6008D5794 /* HomeViewBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B21696125C452A6008D5794 /* HomeViewBanner.swift */; };
+		2B21696525C453A6008D5794 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B21696425C453A6008D5794 /* Extension.swift */; };
+		2B21696925C468CA008D5794 /* ToDoHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B21696825C468CA008D5794 /* ToDoHomeView.swift */; };
+		2B21696E25C46E99008D5794 /* TaskRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B21696D25C46E99008D5794 /* TaskRowView.swift */; };
 		2B36235025BD3B890070B38C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B36234F25BD3B890070B38C /* HomeView.swift */; };
 		2B5FD74725C23E1000BBE8DC /* StepperBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5FD74625C23E1000BBE8DC /* StepperBasic.swift */; };
 		2B5FD74E25C2FF2E00BBE8DC /* ShowPictureWithWarningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5FD74D25C2FF2E00BBE8DC /* ShowPictureWithWarningView.swift */; };
@@ -45,6 +50,11 @@
 		2B203B5125C07CB200B934C1 /* DisclosureViewIntro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisclosureViewIntro.swift; sourceTree = "<group>"; };
 		2B203B5525C07D6200B934C1 /* FormView_Header_Footer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormView_Header_Footer.swift; sourceTree = "<group>"; };
 		2B203B5825C0DCF400B934C1 /* DemoDisclosureGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoDisclosureGroup.swift; sourceTree = "<group>"; };
+		2B21695D25C44E35008D5794 /* CurvedSideRectangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurvedSideRectangle.swift; sourceTree = "<group>"; };
+		2B21696125C452A6008D5794 /* HomeViewBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewBanner.swift; sourceTree = "<group>"; };
+		2B21696425C453A6008D5794 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		2B21696825C468CA008D5794 /* ToDoHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoHomeView.swift; sourceTree = "<group>"; };
+		2B21696D25C46E99008D5794 /* TaskRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRowView.swift; sourceTree = "<group>"; };
 		2B36234F25BD3B890070B38C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		2B5FD74625C23E1000BBE8DC /* StepperBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepperBasic.swift; sourceTree = "<group>"; };
 		2B5FD74D25C2FF2E00BBE8DC /* ShowPictureWithWarningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowPictureWithWarningView.swift; sourceTree = "<group>"; };
@@ -64,6 +74,7 @@
 		2B040CD425A0EB23006A9415 = {
 			isa = PBXGroup;
 			children = (
+				2B21695B25C44DF4008D5794 /* MyToDo */,
 				2B040CDF25A0EB23006A9415 /* SwiftUI_View_Learning */,
 				2B040CDE25A0EB23006A9415 /* Products */,
 			);
@@ -114,7 +125,6 @@
 			isa = PBXGroup;
 			children = (
 				2B36234F25BD3B890070B38C /* HomeView.swift */,
-				2B0757A825BE48FE00A3677C /* AddListRowView.swift */,
 				2B0757A525BE358D00A3677C /* BannerView.swift */,
 				2B0757AB25BE60BB00A3677C /* UserData.swift */,
 			);
@@ -157,6 +167,35 @@
 				2B203B5825C0DCF400B934C1 /* DemoDisclosureGroup.swift */,
 			);
 			path = DisclosureGroupView;
+			sourceTree = "<group>";
+		};
+		2B21695B25C44DF4008D5794 /* MyToDo */ = {
+			isa = PBXGroup;
+			children = (
+				2B21696725C468B3008D5794 /* ToDoHomeView */,
+				2B21695C25C44E1C008D5794 /* Header */,
+				2B21696425C453A6008D5794 /* Extension.swift */,
+			);
+			path = MyToDo;
+			sourceTree = "<group>";
+		};
+		2B21695C25C44E1C008D5794 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				2B21695D25C44E35008D5794 /* CurvedSideRectangle.swift */,
+				2B21696125C452A6008D5794 /* HomeViewBanner.swift */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		2B21696725C468B3008D5794 /* ToDoHomeView */ = {
+			isa = PBXGroup;
+			children = (
+				2B21696825C468CA008D5794 /* ToDoHomeView.swift */,
+				2B0757A825BE48FE00A3677C /* AddListRowView.swift */,
+				2B21696D25C46E99008D5794 /* TaskRowView.swift */,
+			);
+			path = ToDoHomeView;
 			sourceTree = "<group>";
 		};
 		2B5FD74525C23DFA00BBE8DC /* StepperView */ = {
@@ -239,14 +278,19 @@
 				2B040CE325A0EB23006A9415 /* ContentView.swift in Sources */,
 				2B0757A925BE48FE00A3677C /* AddListRowView.swift in Sources */,
 				2B0757AC25BE60BB00A3677C /* UserData.swift in Sources */,
+				2B21696925C468CA008D5794 /* ToDoHomeView.swift in Sources */,
 				2B203B5625C07D6200B934C1 /* FormView_Header_Footer.swift in Sources */,
 				2B040CE125A0EB23006A9415 /* SwiftUI_View_LearningApp.swift in Sources */,
 				2B0757A625BE358D00A3677C /* BannerView.swift in Sources */,
 				2B36235025BD3B890070B38C /* HomeView.swift in Sources */,
+				2B21696225C452A6008D5794 /* HomeViewBanner.swift in Sources */,
 				2B203B4225C05BC600B934C1 /* SegmentedControl.swift in Sources */,
+				2B21696E25C46E99008D5794 /* TaskRowView.swift in Sources */,
 				2B203B4825C0619500B934C1 /* SegmentedControl_Custom.swift in Sources */,
 				2B203B5225C07CB200B934C1 /* DisclosureViewIntro.swift in Sources */,
 				2B5FD74E25C2FF2E00BBE8DC /* ShowPictureWithWarningView.swift in Sources */,
+				2B21695E25C44E35008D5794 /* CurvedSideRectangle.swift in Sources */,
+				2B21696525C453A6008D5794 /* Extension.swift in Sources */,
 				2B203B4525C05CED00B934C1 /* MyHeaderView.swift in Sources */,
 				2B203B5925C0DCF400B934C1 /* DemoDisclosureGroup.swift in Sources */,
 				2B203B4D25C0678600B934C1 /* FormViewIntro.swift in Sources */,
